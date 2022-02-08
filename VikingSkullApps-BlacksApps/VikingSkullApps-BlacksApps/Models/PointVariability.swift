@@ -21,26 +21,45 @@ class PointVariability: Equatable {
         return lhs.xVariable == rhs.xVariable && lhs.yVariable == rhs.yVariable
     }
     
-    
     // MARK: - Builder Helpers
     
-//    static var randomVariability: PointVariability {
-//        let randomX = Double.random(in: -50...50)
-//        let randomY = Double.random(in: -50...50)
-//        return .init(xVariable: randomX, yVariable: randomY)
-//    }
-//
-//    static func randomSetOfVariabilities(for complexity: Int) -> [PointVariability] {
-//        (1...6).map { _ in randomVariability }
-//    }
-    
-    static var randomVariability: CGPoint {
-        let randomX = Double.random(in: -50...50)
-        let randomY = Double.random(in: -50...50)
+    static func randomVariability(strength: VariabilityStrength = .low) -> CGPoint {
+        let randomX = Double.random(in: strength.lowerBound...strength.upperBound)
+        let randomY = Double.random(in: strength.lowerBound...strength.upperBound)
         return .init(x: randomX, y: randomY)
     }
     
-    static func randomSetOfVariabilities(for complexity: Int) -> [CGPoint] {
-        (1...6).map { _ in randomVariability }
+    static func randomSetOfVariabilities(for complexity: Int, strength: VariabilityStrength = .low) -> [CGPoint] {
+        (1...complexity).map { _ in randomVariability(strength: strength) }
+    }
+}
+
+enum VariabilityStrength {
+    case superLow, low, medium, high
+    
+    var lowerBound: Double {
+        switch self {
+        case .superLow:
+            return -2
+        case .low:
+            return -10
+        case .medium:
+            return -25
+        case .high:
+            return -50
+        }
+    }
+    
+    var upperBound: Double {
+        switch self {
+        case .superLow:
+            return 2
+        case .low:
+            return 10
+        case .medium:
+            return 25
+        case .high:
+            return 50
+        }
     }
 }

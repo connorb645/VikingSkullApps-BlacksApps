@@ -34,11 +34,9 @@ struct AnimatableVectorVariabilities: VectorArithmetic {
     }
     
     // MARK: VectorArithmetic
-    var magnitudeSquared: Double // squared magnitude of the vector
+    var magnitudeSquared: Double
     
     mutating func scale(by rhs: Double) {
-        // scale vector with a scalar
-        // = each value is multiplied by rhs
         for index in 0..<values.count {
             values[index].x *= CGFloat(rhs)
             values[index].y *= CGFloat(rhs)
@@ -47,9 +45,6 @@ struct AnimatableVectorVariabilities: VectorArithmetic {
     }
     
     // MARK: AdditiveArithmetic
-    
-    // zero is identity element for aditions
-    // = all values are zero
     static var zero: AnimatableVectorVariabilities = AnimatableVectorVariabilities()
     
     static func + (lhs: AnimatableVectorVariabilities, rhs: AnimatableVectorVariabilities) -> AnimatableVectorVariabilities {
