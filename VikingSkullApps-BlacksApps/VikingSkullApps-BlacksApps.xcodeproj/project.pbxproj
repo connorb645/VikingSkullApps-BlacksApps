@@ -18,6 +18,9 @@
 		C372D02527B32BDC003FEB5D /* BlobLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372D02427B32BDC003FEB5D /* BlobLoader.swift */; };
 		C372D02727B32C0E003FEB5D /* BlobLoaderObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372D02627B32C0E003FEB5D /* BlobLoaderObservable.swift */; };
 		C372D02A27B32C59003FEB5D /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372D02927B32C59003FEB5D /* Blob.swift */; };
+		C372D02E27B45452003FEB5D /* CoinbaseScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372D02D27B45452003FEB5D /* CoinbaseScreenView.swift */; };
+		C372D03027B4547C003FEB5D /* CoinbaseScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372D02F27B4547C003FEB5D /* CoinbaseScreenViewModel.swift */; };
+		C372D03327B45671003FEB5D /* Stubbed+Cryptocoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372D03227B45671003FEB5D /* Stubbed+Cryptocoins.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		C372D02427B32BDC003FEB5D /* BlobLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobLoader.swift; sourceTree = "<group>"; };
 		C372D02627B32C0E003FEB5D /* BlobLoaderObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobLoaderObservable.swift; sourceTree = "<group>"; };
 		C372D02927B32C59003FEB5D /* Blob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blob.swift; sourceTree = "<group>"; };
+		C372D02D27B45452003FEB5D /* CoinbaseScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinbaseScreenView.swift; sourceTree = "<group>"; };
+		C372D02F27B4547C003FEB5D /* CoinbaseScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinbaseScreenViewModel.swift; sourceTree = "<group>"; };
+		C372D03227B45671003FEB5D /* Stubbed+Cryptocoins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stubbed+Cryptocoins.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 		C372D00A27B1A4C7003FEB5D /* VikingSkullApps-BlacksApps */ = {
 			isa = PBXGroup;
 			children = (
+				C372D02B27B45424003FEB5D /* UI Clones */,
 				C372D02827B32C51003FEB5D /* Shapes */,
 				C372D01F27B30BB4003FEB5D /* Models */,
 				C372D01C27B30B2D003FEB5D /* Helpers */,
@@ -118,6 +125,32 @@
 				C372D02927B32C59003FEB5D /* Blob.swift */,
 			);
 			path = Shapes;
+			sourceTree = "<group>";
+		};
+		C372D02B27B45424003FEB5D /* UI Clones */ = {
+			isa = PBXGroup;
+			children = (
+				C372D02C27B4542B003FEB5D /* Coinbase */,
+			);
+			path = "UI Clones";
+			sourceTree = "<group>";
+		};
+		C372D02C27B4542B003FEB5D /* Coinbase */ = {
+			isa = PBXGroup;
+			children = (
+				C372D03127B45642003FEB5D /* Data */,
+				C372D02D27B45452003FEB5D /* CoinbaseScreenView.swift */,
+				C372D02F27B4547C003FEB5D /* CoinbaseScreenViewModel.swift */,
+			);
+			path = Coinbase;
+			sourceTree = "<group>";
+		};
+		C372D03127B45642003FEB5D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C372D03227B45671003FEB5D /* Stubbed+Cryptocoins.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,8 +224,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C372D02727B32C0E003FEB5D /* BlobLoaderObservable.swift in Sources */,
+				C372D03327B45671003FEB5D /* Stubbed+Cryptocoins.swift in Sources */,
+				C372D02E27B45452003FEB5D /* CoinbaseScreenView.swift in Sources */,
 				C372D00E27B1A4C7003FEB5D /* ContentView.swift in Sources */,
 				C372D01B27B30AE1003FEB5D /* CGPoint+Extensions.swift in Sources */,
+				C372D03027B4547C003FEB5D /* CoinbaseScreenViewModel.swift in Sources */,
 				C372D01E27B30B39003FEB5D /* DrawingHelper.swift in Sources */,
 				C372D00C27B1A4C7003FEB5D /* VikingSkullApps_BlacksAppsApp.swift in Sources */,
 				C372D02127B30BC1003FEB5D /* PointVariability.swift in Sources */,
