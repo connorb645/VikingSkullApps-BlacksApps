@@ -22,7 +22,7 @@ class BlobLoaderObservable: ObservableObject {
     init(topGradientColor: Color,
          bottomGradientColor: Color,
          complexity: Int = 5,
-         duration: Double = 0.5,
+         duration: Double = 0.75,
          variabilityStrength: VariabilityStrength = .medium) {
         
         self.variabilityStrength = variabilityStrength
@@ -39,7 +39,7 @@ class BlobLoaderObservable: ObservableObject {
     
     func updateBlob() {
         withAnimation(animation) {
-            let randomVariabilities = PointVariability.randomSetOfVariabilities(for: 5,
+            let randomVariabilities = PointVariability.randomSetOfVariabilities(for: complexity,
                                                                                 strength: variabilityStrength)
             let newPointVars = AnimatableVectorVariabilities(with: randomVariabilities)
             pointVariabilities = newPointVars

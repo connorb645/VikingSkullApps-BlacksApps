@@ -46,7 +46,7 @@ enum VariabilityStrength {
         case .medium:
             return -25
         case .high:
-            return -50
+            return -35
         }
     }
     
@@ -59,7 +59,7 @@ enum VariabilityStrength {
         case .medium:
             return 25
         case .high:
-            return 50
+            return 35
         }
     }
 }
