@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct VikingSkullApps_BlacksAppsApp: App {
+    
+    @StateObject var themeService = ThemeService()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CoinbaseScreenView()
+                .environmentObject(themeService)
         }
     }
 }

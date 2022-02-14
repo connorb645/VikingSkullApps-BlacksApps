@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C346776227B7DD710001D271 /* Cryptocoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C346776127B7DD710001D271 /* Cryptocoin.swift */; };
+		C346776427B9A39C0001D271 /* LineGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = C346776327B9A39C0001D271 /* LineGraph.swift */; };
+		C346776627B9A3CE0001D271 /* AnimatableVectorGraphYPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C346776527B9A3CE0001D271 /* AnimatableVectorGraphYPoints.swift */; };
+		C346776A27BAD09E0001D271 /* ThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C346776927BAD09E0001D271 /* ThemeService.swift */; };
+		C346776C27BAD0C30001D271 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C346776B27BAD0C30001D271 /* Color+Extension.swift */; };
 		C372D00C27B1A4C7003FEB5D /* VikingSkullApps_BlacksAppsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372D00B27B1A4C7003FEB5D /* VikingSkullApps_BlacksAppsApp.swift */; };
 		C372D00E27B1A4C7003FEB5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372D00D27B1A4C7003FEB5D /* ContentView.swift */; };
 		C372D01027B1A4C9003FEB5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C372D00F27B1A4C9003FEB5D /* Assets.xcassets */; };
@@ -20,10 +25,15 @@
 		C372D02A27B32C59003FEB5D /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372D02927B32C59003FEB5D /* Blob.swift */; };
 		C372D02E27B45452003FEB5D /* CoinbaseScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372D02D27B45452003FEB5D /* CoinbaseScreenView.swift */; };
 		C372D03027B4547C003FEB5D /* CoinbaseScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372D02F27B4547C003FEB5D /* CoinbaseScreenViewModel.swift */; };
-		C372D03327B45671003FEB5D /* Stubbed+Cryptocoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372D03227B45671003FEB5D /* Stubbed+Cryptocoins.swift */; };
+		C372D03327B45671003FEB5D /* CryptocoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C372D03227B45671003FEB5D /* CryptocoinData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C346776127B7DD710001D271 /* Cryptocoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptocoin.swift; sourceTree = "<group>"; };
+		C346776327B9A39C0001D271 /* LineGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraph.swift; sourceTree = "<group>"; };
+		C346776527B9A3CE0001D271 /* AnimatableVectorGraphYPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableVectorGraphYPoints.swift; sourceTree = "<group>"; };
+		C346776927BAD09E0001D271 /* ThemeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeService.swift; sourceTree = "<group>"; };
+		C346776B27BAD0C30001D271 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		C372D00827B1A4C7003FEB5D /* VikingSkullApps-BlacksApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VikingSkullApps-BlacksApps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C372D00B27B1A4C7003FEB5D /* VikingSkullApps_BlacksAppsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VikingSkullApps_BlacksAppsApp.swift; sourceTree = "<group>"; };
 		C372D00D27B1A4C7003FEB5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,7 +48,7 @@
 		C372D02927B32C59003FEB5D /* Blob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blob.swift; sourceTree = "<group>"; };
 		C372D02D27B45452003FEB5D /* CoinbaseScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinbaseScreenView.swift; sourceTree = "<group>"; };
 		C372D02F27B4547C003FEB5D /* CoinbaseScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinbaseScreenViewModel.swift; sourceTree = "<group>"; };
-		C372D03227B45671003FEB5D /* Stubbed+Cryptocoins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stubbed+Cryptocoins.swift"; sourceTree = "<group>"; };
+		C372D03227B45671003FEB5D /* CryptocoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptocoinData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C346776727B9A3D20001D271 /* AnimatableVector */ = {
+			isa = PBXGroup;
+			children = (
+				C372D02227B30CBA003FEB5D /* AnimatableVectorVariabilities.swift */,
+				C346776527B9A3CE0001D271 /* AnimatableVectorGraphYPoints.swift */,
+			);
+			path = AnimatableVector;
+			sourceTree = "<group>";
+		};
+		C346776827BAD0920001D271 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C346776927BAD09E0001D271 /* ThemeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C372CFFF27B1A4C7003FEB5D = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +98,7 @@
 		C372D00A27B1A4C7003FEB5D /* VikingSkullApps-BlacksApps */ = {
 			isa = PBXGroup;
 			children = (
+				C346776827BAD0920001D271 /* Services */,
 				C372D02B27B45424003FEB5D /* UI Clones */,
 				C372D02827B32C51003FEB5D /* Shapes */,
 				C372D01F27B30BB4003FEB5D /* Models */,
@@ -98,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				C372D01A27B30AE1003FEB5D /* CGPoint+Extensions.swift */,
+				C346776B27BAD0C30001D271 /* Color+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -113,8 +142,9 @@
 		C372D01F27B30BB4003FEB5D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C346776727B9A3D20001D271 /* AnimatableVector */,
 				C372D02027B30BC1003FEB5D /* PointVariability.swift */,
-				C372D02227B30CBA003FEB5D /* AnimatableVectorVariabilities.swift */,
+				C346776127B7DD710001D271 /* Cryptocoin.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				C372D02927B32C59003FEB5D /* Blob.swift */,
+				C346776327B9A39C0001D271 /* LineGraph.swift */,
 			);
 			path = Shapes;
 			sourceTree = "<group>";
@@ -148,7 +179,7 @@
 		C372D03127B45642003FEB5D /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				C372D03227B45671003FEB5D /* Stubbed+Cryptocoins.swift */,
+				C372D03227B45671003FEB5D /* CryptocoinData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -223,17 +254,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C346776227B7DD710001D271 /* Cryptocoin.swift in Sources */,
+				C346776A27BAD09E0001D271 /* ThemeService.swift in Sources */,
 				C372D02727B32C0E003FEB5D /* BlobLoaderObservable.swift in Sources */,
-				C372D03327B45671003FEB5D /* Stubbed+Cryptocoins.swift in Sources */,
+				C372D03327B45671003FEB5D /* CryptocoinData.swift in Sources */,
 				C372D02E27B45452003FEB5D /* CoinbaseScreenView.swift in Sources */,
 				C372D00E27B1A4C7003FEB5D /* ContentView.swift in Sources */,
 				C372D01B27B30AE1003FEB5D /* CGPoint+Extensions.swift in Sources */,
 				C372D03027B4547C003FEB5D /* CoinbaseScreenViewModel.swift in Sources */,
 				C372D01E27B30B39003FEB5D /* DrawingHelper.swift in Sources */,
+				C346776427B9A39C0001D271 /* LineGraph.swift in Sources */,
 				C372D00C27B1A4C7003FEB5D /* VikingSkullApps_BlacksAppsApp.swift in Sources */,
 				C372D02127B30BC1003FEB5D /* PointVariability.swift in Sources */,
 				C372D02A27B32C59003FEB5D /* Blob.swift in Sources */,
 				C372D02327B30CBA003FEB5D /* AnimatableVectorVariabilities.swift in Sources */,
+				C346776C27BAD0C30001D271 /* Color+Extension.swift in Sources */,
+				C346776627B9A3CE0001D271 /* AnimatableVectorGraphYPoints.swift in Sources */,
 				C372D02527B32BDC003FEB5D /* BlobLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
